@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--para cambiar el link:favicon el icono de la pagina que sale donde estan tititulo
+    se cambia en la parte del href-->
+    <link rel="shortcut icon" href="calculadora-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <!--theme-toggler para el cambio de tema por ejemplo de pasar negro a blanco(el boton)-->
+            <div class="theme-toggler active">
+                <!--icono del toggler o el boton para cambiar el color del tehma-->
+                <i class="toggler-icon"></i>
+            </div>
+       <!--aqui saldran los numeros para realizar la operacion-->
+            <div class="display-screen">
+                     <!--sirve para visualizar los elementos dentro de la calculadora
+            por asi decirlo poner bien en bloques(pantalla de la calcu)-->
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <!--boton para borrar-->
+                        <td><button class="btn-operador" id="clear">C</button></td>
+                        <!--boton para dividir-->
+                        <td><button class="btn-operador" id="/">/</button></td>
+                        <!--boton para multiplicar-->
+                        <td><button class="btn-operador" id="*">x</button></td>
+                        <!--boton para borrar-->
+                        <td><button class="btn-operador" id="backspace"><</button></td>
+                    </tr>
+                    <tr>
+                        <!--boton para borrar-->
+                        <td><button class="btn-number" id="7">7</button></td>
+                        <!--boton para dividir-->
+                        <td><button class="btn-number" id="8">8</button></td>
+                        <!--boton para multiplicar-->
+                        <td><button class="btn-number" id="9">9</button></td>
+                        <!--boton para borrar-->
+                        <td><button class="btn-operador" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <!--boton para borrar-->
+                        <td><button class="btn-number" id="4">4</button></td>
+                        <!--boton para dividir-->
+                        <td><button class="btn-number" id="5">5</button></td>
+                        <!--boton para multiplicar-->
+                        <td><button class="btn-number" id="6">6</button></td>
+                        <!--boton para borrar-->
+                        <td><button class="btn-operador" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <!--boton para borrar-->
+                        <td><button class="btn-number" id="1">1</button></td>
+                        <!--boton para dividir-->
+                        <td><button class="btn-number" id="2">2</button></td>
+                        <!--boton para multiplicar-->
+                        <td><button class="btn-number" id="3">3</button></td>
+                        <!--boton para borrar-->
+                        <td rowspan="2"><button class="btn-equal" id="igual">=</button></td>
+                    </tr>
+                    <tr>
+                        <!--boton para borrar-->
+                        <td><button class="btn-operador" id=".">.</button></td>
+                        <!--boton para poner 0 con value="0"-->
+                        <td><button class="btn-number" id="0">0</button></td>
+                        <!--boton para multiplicar-->
+                        <td><button class="btn-operador" id="00">00</button></td>
+                        <!--recuerda ALAN si fuera un input el 00 seria el value ejemplo
+                        <inpu type=button value="00" id="00"/>-->
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
